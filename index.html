@@ -127,6 +127,17 @@
         body.loaded {
             opacity: 1;
         }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: block;
+            margin: 0 auto 1rem auto;
+            border: 3px solid #007acc;
+        }
     </style>
 </head>
 
@@ -138,6 +149,7 @@
     </header>
 
     <main>
+        <img src="images/aelon.jpeg" alt="[Your Name] Profile Photo" class="profile-photo" />
         <section id="about">
             <h2>That's my way of doing things</h2>
             <p><span class="highlight">Design from Start to Finish</span><br />
