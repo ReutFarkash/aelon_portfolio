@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Custom 3D Mesh Hand Brace - [Your Name]</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            border-bottom: 2px solid #007acc;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #007acc;
+            font-weight: 700;
+            margin-top: 2rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">&larr; Back to Portfolio Home</a>
+        <h1>Custom 3D Mesh Hand Brace Design</h1>
+    </header>
+
+    <section>
+        <p>This project outlines the process of designing a custom 3D mesh pattern for a hand brace using Grasshopper, a
+            visual programming language for Rhino 3D. The design focuses on creating a comfortable and functional
+            product.</p>
+
+        <h2>Importing and Mapping the Hand Mesh</h2>
+        <p>Use MediaPipe to detect key hand joint points and output their coordinates, then import the 3D hand mesh as
+            an STL or OBJ file into Rhino/Grasshopper.</p>
+
+        <h2>Design Process Highlights</h2>
+        <ul>
+            <li>Map MediaPipe points onto the 3D hand mesh surface to follow the hand's curvature.</li>
+            <li>Apply Boolean operations to modify the mesh for comfort in key areas.</li>
+            <li>Create hexagonal grids and citron star-like mesh patterns with positive and negative movements
+                controlled by sliders.</li>
+            <li>Use attractor points and smoothing algorithms to refine the shape and blend individual hexagonal faces
+                into a natural organic surface.</li>
+            <li>Export finalized brace as STL or OBJ for 3D printing.</li>
+        </ul>
+
+        <h2>Key Design Considerations</h2>
+        <ul>
+            <li><strong>Manufacturability:</strong> Designed for 3D printing constraints to ensure successful
+                production.</li>
+            <li><strong>Aesthetics:</strong> Inspired by automotive ornamentation and organic fruit forms.</li>
+            <li><strong>Functionality:</strong> Provides support while allowing necessary movement.</li>
+            <li><strong>Comfort:</strong> Prioritizes user comfort via material placement and thickness adjustments.
+            </li>
+        </ul>
+
+        <p>The custom brace design balances ergonomic support and an appealing form to encourage wearability and
+            comfort.</p>
+    </section>
+
+    <footer>
+        © 2025 [Your Name]. Built with GitHub Pages.
+    </footer>
+</body>
+
+</html>
