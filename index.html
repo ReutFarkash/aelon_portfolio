@@ -6,49 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>[Your Name] - Product Designer</title>
     <style>
+        /* Basic reset and typography */
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #fff;
-            color: #333;
+            background-color: #fff;
+            color: #111;
+            line-height: 1.6;
         }
 
-        header {
-            background: #000;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
+        a {
+            color: #007acc;
             text-decoration: none;
         }
 
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-weight: 300;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
         section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
+            margin-bottom: 3rem;
         }
 
-        h1,
         h2 {
+            font-weight: 700;
+            font-size: 1.7rem;
+            border-bottom: 3px solid #007acc;
+            display: inline-block;
+            padding-bottom: 0.3rem;
             margin-bottom: 1rem;
+            color: #007acc;
         }
 
-        .projects img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+        p {
+            font-weight: 400;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            white-space: pre-line;
+            /* preserve line breaks */
+        }
+
+        .highlight {
+            font-weight: 700;
+        }
+
+        .location {
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #666;
+        }
+
+        .testimonial {
+            font-style: italic;
+            color: #444;
+            border-left: 4px solid #007acc;
+            padding-left: 1rem;
+            margin-top: 1rem;
         }
 
         footer {
             text-align: center;
-            padding: 1rem;
+            padding: 1.5rem 0;
             font-size: 0.9rem;
             color: #666;
+            border-top: 1px solid #ddd;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
         }
     </style>
 </head>
@@ -56,36 +110,47 @@
 <body>
     <header>
         <h1>[Your Name]</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <p>Product Designer</p>
+        <p class="location">São Paulo (Brazil) . London (UK) . Lisbon (Portugal)</p>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Brief intro about your design philosophy, skills and experience as a product designer.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>That's my way of doing things</h2>
+            <p><span class="highlight">Design from Start to Finish</span><br />
+                Leading the full process from bold ideas to polished products, blending user-centered UX, engaging
+                interactions, and visually compelling, brand-aligned digital design.</p>
 
-    <section id="projects" class="projects">
-        <h2>Selected Projects</h2>
-        <article>
-            <h3>Project Title</h3>
-            <img src="project-image.jpg" alt="Screenshot of Project" />
-            <p>Short description highlighting your role and design outcomes.</p>
-        </article>
-        <!-- Add more project articles as needed -->
-    </section>
+            <p><span class="highlight">Dig into User Insights</span><br />
+                Dive into user research and testing, using real feedback to fine-tune designs that feel right.</p>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-    </section>
+            <p><span class="highlight">Team Up Across Departments</span><br />
+                Collaborate closely with PMs, developers, and stakeholders to ensure smooth, high-quality design
+                execution.</p>
+
+            <p><span class="highlight">Mentor and Be Inspired</span><br />
+                Support and mentor junior designers by providing constructive feedback, sharing best practices, and
+                guiding them through design challenges.</p>
+        </section>
+
+        <section id="testimonial">
+            <h2>Here's what people have said about me! 🫣</h2>
+            <p class="testimonial">
+                "A truly inspiring designer who brings value from the first sketch."
+                <br />– Happy Client
+            </p>
+            <!-- Add more testimonials here as needed -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2025 [Your Name]. Built with GitHub Pages.</p>
+        © 2025 [Your Name]. Built with GitHub Pages.
     </footer>
 </body>
 
