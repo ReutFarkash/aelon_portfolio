@@ -108,3 +108,18 @@ body.dark-mode .project-desc {
     color: #dbe9ff;
     text-shadow: 0 2px 12px rgba(10, 20, 66, 0.8);
 }
+
+
+
+.project-link {
+    display: inline-block;
+    /* Remove underline by default, but keep native focus/hover */
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-link:focus .project-image-wrapper,
+.project-link:hover .project-image-wrapper {
+    outline: 2px solid #3973b3;
+    outline-offset: 4px;
+}

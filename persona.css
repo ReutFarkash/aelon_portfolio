@@ -262,3 +262,70 @@ body.dark-mode .list li {
 body.dark-mode .brand-logos img {
     filter: grayscale(0) brightness(0.8);
 }
+
+
+
+
+/* General page background */
+body.dark-mode {
+    background-color: #181E33;
+    color: #ecf4fc;
+}
+
+/* Section/Card containers */
+body.dark-mode .section,
+body.dark-mode .project-highlight {
+    background: #242c49 !important;
+    box-shadow: 0 8px 32px rgba(30, 36, 58, 0.60), 0 2px 8px rgba(30, 36, 58, 0.36);
+    color: #e6ecf8;
+    border: 1px solid #293158;
+}
+
+/* Product images get a gentle shadow and smoother overlay */
+body.dark-mode .project-image {
+    box-shadow: 0 14px 38px 0 rgba(30, 50, 90, 0.40);
+    background: transparent;
+}
+
+/* Blur overlay for image: softer, less dark */
+body.dark-mode .project-blur-overlay {
+    background: rgba(40, 50, 90, 0.29);
+}
+
+/* Headings brighter */
+body.dark-mode h1,
+body.dark-mode .section h3,
+body.dark-mode .project-title {
+    color: #d1e4ff !important;
+    text-shadow: 0 2px 18px rgba(100, 150, 255, 0.09);
+}
+
+/* Paragraph/body text */
+body.dark-mode p,
+body.dark-mode .project-desc,
+body.dark-mode .list li {
+    color: #e8f1fa !important;
+}
+
+/* Links */
+body.dark-mode a,
+body.dark-mode .primary-button {
+    color: #aad1ff !important;
+}
+
+body.dark-mode a:hover,
+body.dark-mode .primary-button:hover {
+    color: #fff;
+    background: #3469b4;
+}
+
+body.dark-mode .section-heading {
+    color: #aed9fe;
+}
+
+/* Button in section */
+body.dark-mode .primary-button {
+    background-color: #294080;
+    color: #d1e4ff;
+    border-color: #5770af;
+}
