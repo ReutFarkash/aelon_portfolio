@@ -4,14 +4,28 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Persona: Aelon Farkash</title>
+    <title>Aelon Farkash - Portfolio</title>
     <link rel="stylesheet" href="persona.css">
 
 </head>
 
 <body>
+
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><button id="darkModeToggle" class="toggle-button" aria-label="Toggle Dark Mode">🌙</button></li>
+
+        </ul>
+    </nav>
+
     <div class="persona-card">
         <div class="persona-left">
+            <button class="primary-button" onclick="window.location.href='contact.html'">Contact Me</button>
+
             <img src="images/aelon.jpeg" alt="Profile Photo" class="profile-img" />
             <div class="persona-title">Aelon Farkash</div>
             <div class="persona-role">Product Designer</div>
@@ -24,7 +38,7 @@
                 <div><strong>Archetype:</strong> Frequent Flyer</div>
             </div>
             <div class="persona-tags">
-                <span class="tag">Organized</span>
+                <a href="handbrace.html" class="tag">Hand Brace</a>
                 <span class="tag">Practical</span>
                 <span class="tag">Passionate</span>
                 <span class="tag">Hardworking</span>
@@ -44,7 +58,7 @@
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
             </div>
-            <div class="section">
+            <!-- <div class="section">
                 <h3>Motivations</h3>
                 <div>Price</div>
                 <div class="progress-bar-bg">
@@ -66,7 +80,26 @@
                 <div class="progress-bar-bg">
                     <div class="progress-bar" style="width:60%"></div>
                 </div>
+            </div> -->
+            <div class="section project-highlight">
+                <div class="project-image-wrapper">
+                    <img src="images/HandBrace.png" alt="3D Mesh Pattern for a Custom Hand Brace"
+                        class="project-image" />
+                    <div class="project-blur-overlay"></div>
+                    <div class="project-overlay">
+                        <h3 class="project-title">3D Mesh Pattern for a Custom Hand Brace</h3>
+                        <p class="project-desc">
+                            Designed in Rhino/Grasshopper, this project blends anatomical data with generative hex
+                            mesh.<br>
+                            The brace is optimized for comfort, support, and 3D printing, with a flexible ergonomic fit
+                            and vibrant aesthetic.
+                        </p>
+                    </div>
+                </div>
             </div>
+
+
+
             <div class="section">
                 <h3>Personality</h3>
                 <div>Introvert</div>
@@ -129,6 +162,21 @@
             </div>
         </div>
     </div>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Default: light mode
+        body.classList.remove('dark-mode');
+        toggleBtn.textContent = "🌙";
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            toggleBtn.textContent = body.classList.contains('dark-mode') ? "☀️" : "🌙";
+        });
+    </script>
+
+
 </body>
 
 </html>
